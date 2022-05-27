@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/get', function () {return "ゲットメソッドはurlに直接、リクエスト内容を記載する";} );
