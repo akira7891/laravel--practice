@@ -9,8 +9,9 @@ use App\Http\Controllers\Controller;
 class IndexController extends Controller
 {
   
-   public function __invoke(Request $request, Response $response,$id="urlほしいデータの住所を入力してください") {
-       $data=["res"=>$response,"req"=>$request,"id"=>$id];
+   public function __invoke(Request $request, Response $response) {
+       $data=["res"=>$response,"req"=>$request,"id"=>$request->id,];
+       //リクエストインタンスのidプロパティの中にゲットリクエストで渡されたキーデータが入っている
        return view('php.index',$data);
    }
 
