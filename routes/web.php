@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/get/{id}', function ($x) {return "<html><h1>{$x}</h1></html>";} );
-//第一引数のルートパラメータの値は、第二引数で設定できる
-
+Route::get('/get/{id?}', function ($x=12) {return "<html><h1>{$x}</h1></html>";} );
+//ルートパラメータを任意パラメータに設定　
+//ルートパラメータに何も入力しなかった場合はあらかじめ設定しておける。
+//設定せずに、ルートパラメータに何も何も入力せずアクセスするとエラーになる
