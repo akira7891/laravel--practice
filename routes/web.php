@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/get', function () {return "<html><h1>htmlタグを出力</h1></html>";} );
+Route::get('/get/{id}', function ($x) {return "<html><h1>{$x}</h1></html>";} );
+//第一引数のルートパラメータの値は、第二引数で設定できる
 
