@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/get', function () {return "ゲットメソッドはurlに直接、リクエスト内容を記載する";} );
+//無名関数をつかっている
