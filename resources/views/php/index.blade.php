@@ -9,7 +9,11 @@
 </head>
 <body>
    <h1>Index</h1>
-   <pre>{{$id}}</pre>
+   <form action="/res" method="get">
+      <input name="akira" type="text">
+      <input type="submit" value="ゲットメソッドでリクエスト。akiraキーでデータの受け渡し">
+   </form>
+   {{$ookubo}}
    <pre>{{$req}}</pre>
    <pre>{{$res}}</pre>
 </body>
