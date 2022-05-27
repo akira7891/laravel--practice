@@ -9,6 +9,7 @@
 </head>
 <body>
    <h1>Index</h1>
+   <p>{{$req}}</p>
    <p>{{$res}}</p>
 </body>
 </html>
