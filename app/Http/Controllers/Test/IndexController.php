@@ -10,7 +10,7 @@ class IndexController extends Controller
 {
   
    public function __invoke(Request $request, Response $response) {
-       return view('php.index');
+       return view('php.index',["res"=>$response]);
    }
 
 }
