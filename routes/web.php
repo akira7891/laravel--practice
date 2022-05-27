@@ -17,7 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/get/{id?}', function ($x=12) {return "<html><h1>{$x}</h1></html>";} );
-//ルートパラメータを任意パラメータに設定　
-//ルートパラメータに何も入力しなかった場合はあらかじめ設定しておける。
-//設定せずに、ルートパラメータに何も何も入力せずアクセスするとエラーになる
+Route::get('/testo/',[App\Http\Controllers\Test\IndexController::class,'index']);
